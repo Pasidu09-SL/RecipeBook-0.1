@@ -1,4 +1,4 @@
-# Chamo Recipe Website
+# Recipe Book Website
 
 This repository contains the HTML files and resources for the Chamo Recipe website. The website provides a collection of recipes, with a focus on delicious and easy-to-make dishes. Below is an overview of the files and their purposes.
 
