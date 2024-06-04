@@ -1,6 +1,6 @@
 # Recipe Book Website
 
-This repository contains the HTML files and resources for the Chamo Recipe website. The website provides a collection of recipes, with a focus on delicious and easy-to-make dishes. Below is an overview of the files and their purposes.
+This repository contains the HTML files and resources for the Recipe Book website. The website provides a collection of recipes, with a focus on delicious and easy-to-make dishes. Below is an overview of the files and their purposes.
 
 ### HTML Files
 - **index.html**: The homepage of the website, welcoming users and providing navigation to other sections.
@@ -54,4 +54,4 @@ Each page includes a footer with copyright information.
 
 ---
 
-Feel free to explore the recipes and enjoy cooking with Chamo Recipe!
+Feel free to explore the recipes and enjoy cooking with Recipe Book!
