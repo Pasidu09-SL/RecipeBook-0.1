@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 60%;
+            margin: auto;
+            overflow: hidden;
+            padding: 30px;
+            background: white;
+            margin-top: 50px;
+            margin-bottom: 4%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            background-image: url('/images/secondery-background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+        }
+
+        .header, .content, .contact-form {
+            margin-bottom: 30px;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .content h2, .content p {
+            margin: 10px 0;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            margin-top: 20px;
+            margin-right: 45%;
+            margin-left: 45%;
+            padding: 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe <span>Book</span></h1>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>       
+                    <li><a href="/categories.html" class="nav-link">Categories</a></li>             
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="header">
+            <img src="https://via.placeholder.com/300" alt="Your Name">
+            <h1>Recipe</h1>
+        </div>
+
+        <div class="content">
+            <h2>Contact Details</h2>
+            <p>Email: ##### @gmail.com</p>
+            <p>Phone: +940 000 0000</p>
+            <p>Address: Sri Lanka</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="/submit_contact_form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

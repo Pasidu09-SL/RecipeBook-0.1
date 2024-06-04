@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Desserts</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>My Favorite <span>Desserts</span> </h1>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="/categories.html" class="nav-link">Categories</a></li>
+                    <li><a href="/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="button">Search</button>
+        </div>
+        <section id="desserts">
+            <h2>Desserts</h2>
+            <div class="recipe-card">
+                <div class="recipe-card">
+                    <img src="/images/Chocolate Brownies.jpg" class="box-size" alt="Chocolate Brownies">
+                    <h3>Chocolate Brownies</h3>
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>1 cup unsalted butter, melted</li>
+                        <li>1 cup granulated sugar</li>
+                        <li>1 cup brown sugar</li>
+                        <li>1 teaspoon vanilla extract</li>
+                        <li>4 large eggs</li>
+                        <li>1 cup all-purpose flour</li>
+                        <li>3/4 cup unsweetened cocoa powder</li>
+                        <li>1/2 teaspoon salt</li>
+                        <li>1 cup chocolate chips (optional)</li>
+                    </ul>
+                    <h4>Instructions:</h4>
+                    <ol>
+                        <li>Preheat oven to 350°F (175°C). Grease a 9x13-inch baking pan.</li>
+                        <li>In a large bowl, mix melted butter, granulated sugar, brown sugar, and vanilla extract until well combined.</li>
+                        <li>Add eggs one at a time, mixing well after each addition.</li>
+                        <li>In a separate bowl, whisk together flour, cocoa powder, and salt.</li>
+                        <li>Add dry ingredients to the wet mixture and stir until just combined.</li>
+                        <li>If desired, fold in chocolate chips.</li>
+                        <li>Pour batter into the prepared baking pan and spread evenly.</li>
+                        <li>Bake for 25-30 minutes, or until a toothpick inserted into the center comes out with a few moist crumbs.</li>
+                        <li>Cool completely before cutting into squares.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="/images/Vanilla Cupcakes.jpg" class="box-size" alt="Vanilla Cupcakes">
+                    <h3>Vanilla Cupcakes</h3>
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>1 1/2 cups all-purpose flour</li>
+                        <li>1 1/2 teaspoons baking powder</li>
+                        <li>1/4 teaspoon salt</li>
+                        <li>1/2 cup unsalted butter, softened</li>
+                        <li>1 cup granulated sugar</li>
+                        <li>2 large eggs</li>
+                        <li>2 teaspoons vanilla extract</li>
+                        <li>1/2 cup milk</li>
+                    </ul>
+                    <h4>Instructions:</h4>
+                    <ol>
+                        <li>Preheat oven to 350°F (175°C). Line a muffin pan with cupcake liners.</li>
+                        <li>In a medium bowl, whisk together flour, baking powder, and salt.</li>
+                        <li>In a large bowl, cream together softened butter and granulated sugar until light and fluffy.</li>
+                        <li>Beat in eggs, one at a time, then stir in vanilla extract.</li>
+                        <li>Gradually add dry ingredients to the wet mixture, alternating with milk, until just combined.</li>
+                        <li>Fill cupcake liners two-thirds full with batter.</li>
+                        <li>Bake for 18-20 minutes, or until a toothpick inserted into the center comes out clean.</li>
+                        <li>Allow cupcakes to cool completely before frosting.</li>
+                    </ol>
+                </div>
+                
+            </div>
+        </section>
+        <div class="next-button-bar">
+            <a href=""><button class="right corner-button next-buttons"><span>Next</span></button></a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Book </p>
+    </footer>
+
+    <div class="button-container">
+        <a href="/index.html"><button type="button" id="viewMoreButton" style="align-items: baseline;">Home</button></a>
+    </div>
+    <script>
+        document.getElementById('viewMoreButton').addEventListener('click', function() {
+            var button = this;
+            button.classList.add('loading');
+            setTimeout(function() {
+                button.classList.remove('loading');
+            }, 3000); // 3 seconds loading time
+        });
+    </script>
+</body>
+</html>

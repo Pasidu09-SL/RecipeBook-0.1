@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe  Book </title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe <span>Book</span></h1>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="button">Search</button>
+        </div>
+
+        <section>
+            <div class="image-container">
+                <div class="image">
+                    <h2>Appetizers</h2>
+                    <a href="/appetizers.html"><img src="/images/appetizers.jpg" class="box-size" alt="Appetizer Image"></a>
+                </div>
+                
+                <div class="image">
+                    <h2>Main Courses</h2>
+                    <a href="/main-courses.html"><img src="/images/maincourse.png" class="box-size" alt="Main Course Image"></a>
+                </div>
+
+                <div class="image">
+                    <h2>Desserts</h2>
+                    <a href="/desserts.html"><img src="/images/dessert.jpg" class="box-size" alt="Dessert Image"></a>
+                </div>
+            </div>    
+            
+            <div class="image-container">
+                <div class="image">
+                    <h2>Indian Recipes</h2>
+                    <a href="#"><img src="/images/indian.jpg" class="box-size" alt="Appetizer Image"></a>
+                </div>
+                
+                <div class="image">
+                    <h2>Sri Lankan Recipes</h2>
+                    <a href="#"><img src="/images/srilankan.jpg" class="box-size" alt="Main Course Image"></a>
+                </div>
+
+                <div class="image">
+                    <h2>Italian Recipes</h2>
+                    <a href="#"><img src="/images/italian.jpg" class="box-size" alt="Dessert Image"></a>
+                </div>
+            </div>    
+
+            <div >
+                <a href="/next-page.html"><button class="right corner-button next-buttons"><span>Next</span></button></a>
+            </div>
+        </section>
+
+        <section class="comment-section">
+            <h2>Name</h2>
+            <form class="comment-form" id="commentForm">
+                <textarea id="email" placeholder="Name..." rows="1"></textarea>
+            </form>
+            <h2>Email</h2>
+            <form class="comment-form" id="commentForm">
+                <textarea id="email" placeholder="Email..." rows="1"></textarea>
+            </form>
+            <h2>Comments</h2>
+            <form class="comment-form" id="commentForm">
+                <textarea id="commentText" placeholder="Write a comment..." rows="4"></textarea>
+                <button type="button" onclick="addComment()" class="button">Submit</button>
+            </form>
+            <div class="comment-list" id="commentList">
+                <!-- Comments will be displayed here -->
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Recipe Book </p>
+    </footer>
+
+    <div class="button-container">
+        <a href="/index.html"><button type="button" style="align-items: baseline;">Home</button></a>
+    </div>
+</body>
+</html>

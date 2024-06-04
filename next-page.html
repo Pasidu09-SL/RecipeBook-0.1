@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book </title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe <span>Book</span></h1>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="/categories.html" class="nav-link">Categories</a></li>
+                    <li><a href="/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="button">Search</button>
+        </div>
+
+        <section id="main-courses">
+            <h2>Main Courses</h2>
+            <div class="recipe-card">
+                <img src="/images/Grilled-Lemon-Chicken.jpg" class="box-size" alt="Main Course Image">
+                <h3>Grilled Lemon Chicken</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>Chicken breasts</li>
+                    <li>Lemon juice</li>
+                    <li>Olive oil</li>
+                    <li>Garlic</li>
+                    <li>Rosemary</li>
+                    <li>Thyme</li>
+                    <li>Salt</li>
+                    <li>Pepper</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>In a bowl, mix lemon juice, olive oil, minced garlic, rosemary, thyme, salt, and pepper.</li>
+                    <li>Add chicken breasts and marinate for at least 30 minutes.</li>
+                    <li>Preheat grill to medium-high heat.</li>
+                    <li>Grill chicken for 6-7 minutes on each side or until fully cooked.</li>
+                    <li>Remove from grill and let rest for a few minutes before serving.</li>
+                </ol>
+                <div class="button-container">
+                    <a href="/main-courses.html"><button type="button" id="viewMoreButton">View More Main Courses</button></a>
+                </div>
+            </div>    
+        </section>
+       
+        <section id="appetizers">
+            <h2>Appetizers</h2>
+            <div class="recipe-card">
+                <img src="/images/Bruschetta.webp" class="box-size" alt="Appetizer Image">
+                <h3>Bruschetta</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>Baguette</li>
+                    <li>Tomatoes</li>
+                    <li>Garlic</li>
+                    <li>Fresh basil</li>
+                    <li>Olive oil</li>
+                    <li>Balsamic vinegar</li>
+                    <li>Salt</li>
+                    <li>Pepper</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Preheat oven to 400°F (200°C).</li>
+                    <li>Slice baguette and place on a baking sheet. Toast in the oven for about 5 minutes.</li>
+                    <li>Dice tomatoes and garlic, then mix in a bowl with chopped basil, olive oil, balsamic vinegar, salt, and pepper.</li>
+                    <li>Spoon the mixture onto the toasted baguette slices.</li>
+                    <li>Serve immediately.</li>
+                </ol>
+                <div class="button-container">
+                    <a href="/appetizers.html"><button type="button" class="box-size" id="viewMoreButton">View More Appetizers</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="desserts">
+            <h2>Desserts</h2>
+            <div class="recipe-card">
+                <img src="/images/Classic Cheesecake.jpg" class="box-size" alt="Dessert Image">
+                <h3>Classic Cheesecake</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>Graham cracker crumbs</li>
+                    <li>Butter</li>
+                    <li>Cream cheese</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Vanilla extract</li>
+                    <li>Sour cream</li>
+                    <li>Lemon juice</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Preheat oven to 325°F (165°C).</li>
+                    <li>Mix graham cracker crumbs and melted butter, then press into the bottom of a springform pan.</li>
+                    <li>In a large bowl, beat cream cheese and sugar until smooth.</li>
+                    <li>Blend in eggs one at a time, then mix in vanilla, sour cream, and lemon juice.</li>
+                    <li>Pour the filling over the crust.</li>
+                    <li>Bake in the preheated oven for about 50 minutes, or until the center is set.</li>
+                    <li>Let cool, then refrigerate for at least 4 hours before serving.</li>
+                </ol>
+                <div class="button-container">
+                    <a href="/desserts.html"><button type="button" id="viewMoreButton">View More Desserts</button></a>
+                </div>
+            </div> 
+            
+            <div class="recipe-card">
+                <img src="https://via.placeholder.com/300" class="box-size" alt="Chocolate Brownies">
+                <h3>Recipe Name</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+                <div class="button-container">
+                    <a href="#"><button type="button" id="viewMoreButton">Add More Recipes</button></a>
+                </div>
+            </div>
+
+            <div>
+                <a href="/index.html"><button class="left corner-button next-buttons"><span>Previous</span></button></a>
+                <a href="/index.html"><button class="right corner-button next-buttons"><span>Next</span></button></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Recipe Book </p>
+    </footer>
+
+    <div class="button-container">
+        <a href="/index.html"><button type="button" style="align-items: baseline;">Home</button></a>
+    </div>
+</body>
+</html>

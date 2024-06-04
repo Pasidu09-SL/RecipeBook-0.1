@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe  Book </title>
+    <!-- Link to the favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Main heading of the website -->
+        <h1>Recipe <span>Book</span></h1>
+        <div class="navbar">
+            <!-- Navigation bar -->
+            <nav>
+                <ul>
+                    <!-- Search bar container -->
+                    <div class="centered-search-container">
+                        <div class="search-container">
+                            <input type="text" placeholder="Search...">
+                            <button type="button">Search</button>
+                        </div>
+                    </div>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="/categories.html" class="nav-link">Categories</a></li>
+                    <li><a href="/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+
+        <!-- Recipe images and links section -->
+        <section>
+            <div class="image-container">
+                <div class="image">
+                    <a href="/caprese-skewers.html"><img src="/images/Caprese-Skewers.jpg" class="box-size" alt="Caprese Skewers IMG"></a>
+                    <a href="/caprese-skewers.html"><h3>Caprese Skewers</h3></a>
+                </div>
+                
+                <div class="image">
+                    <a href="/spaghetti-carbonara.html"><img src="/images/Spaghetti Carbonara.jpg" class="box-size" alt="Spaghetti Carbonara IMG"></a>
+                    <a href="/spaghetti-carbonara.html"><h3>Spaghetti Carbonara</h3></a>
+                </div>
+
+                <div class="image">
+                    <a href="/chocolate-chip-cookies.html"><img src="/images/Chocolate Chip Cookies.jpg" class="box-size" alt="Chocolate Chip Cookies IMG"></a>
+                    <a href="/chocolate-chip-cookies.html"><h3>Chocolate Chip Cookies</h3></a>
+                </div>
+            </div>      
+
+            <div class="image-container">
+                <div class="image">
+                    <a href="#"><img src="/images/Beef Tacos.jpg" class="box-size" alt="Beef Tacos Image"></a>
+                    <a href="#"><h3>Beef Tacos</h3></a>
+                </div>
+                
+                <div class="image">
+                    <a href="#"><img src="/images/Vanilla Cupcakes.jpg" class="box-size" alt="Vanilla Cupcakes Image"></a>
+                    <a href="#"><h3>Vanilla Cupcakes</h3></a>
+                </div>
+
+                <div class="image">
+                    <a href="#"><img src="/images/Stuffed Mushrooms.jpg" class="box-size" alt="Stuffed Mushrooms Image"></a>
+                    <a href="#"><h3>Stuffed Mushrooms</h3></a>
+                </div>
+            </div>     
+            <!-- Next page button --> 
+            <div >
+                <a href="/next-page.html"><button class="right corner-button next-buttons"><span>Next</span></button></a>
+            </div>
+        </section>
+
+        <!-- Comment section -->
+        <section class="comment-section">
+            <h1 style="text-align: center;">Comments</h1>
+            <h2>Name</h2>
+            <form class="comment-form" id="commentForm">
+                <textarea id="email" placeholder="Name..." rows="1"></textarea>
+            </form>
+            <h2>Email</h2>
+            <form class="comment-form" id="commentForm">
+                <textarea id="email" placeholder="Email..." rows="1"></textarea>
+            </form>
+            <h2>Comments</h2>
+            <form class="comment-form" id="commentForm">
+                <textarea id="commentText" placeholder="Write a comment..." rows="4"></textarea>
+                <button type="button" onclick="addComment()" class="button">Submit</button>
+            </form>
+            <div class="comment-list" id="commentList">
+                <!-- Comments will be displayed here -->
+            </div>
+        </section>
+        
+    </main>
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Recipe Book </p>
+    </footer>
+
+    <!-- Home button -->
+    <div class="button-container">
+        <a href="/index.html"><button type="button" style="align-items: baseline;">Home</button></a>
+    </div>
+</body>
+</html>
